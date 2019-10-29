@@ -1,0 +1,9 @@
+<h1>统计结果</h1>
+<h1>总字数为{{count}}字</h1>
+<br>
+<h1>你的文章</h1>
+<h2>{{ text }}</h2>
+<br>
+<h2>出现频率</h2>
+{% for word,count in sorted %} {{ word}} - {{ count }}
+<br> {% endfor %}
